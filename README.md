@@ -43,14 +43,14 @@ npm install
 Crie um arquivo `.env` na raiz do projeto com base no `.env-example`:
 
 ```
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/rocketlog?schema=public
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/rocketlog?schema=public"
 JWT_SECRET=sua_chave_secreta
 ```
 
 ### 4. Suba o banco de dados com Docker
 
 ```bash
-docker-compose up -d
+docker-compose up -d ou docker compose up -d
 ```
 
 ### 5. Execute as migrations do Prisma
