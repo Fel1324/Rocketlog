@@ -1,4 +1,5 @@
 import { Request, Response } from "express"
+import { AppError } from "@/utils/app-error"
 import { prisma } from "@/database/prisma"
 import { z } from "zod"
 
@@ -20,6 +21,13 @@ export class DeliveriesController {
     })
 
     const { user_id, description } = bodySchema.parse(request.body)
+    const user = await prisma.user.findUnique({
+      where: { id: user_id }
+    })
+
+    if(!user){
+      throw new AppError("User not found", 404)
+    }
 
     await prisma.delivery.create({
       data: {
