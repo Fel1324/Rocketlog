@@ -28,7 +28,7 @@ API para gerenciamento de entregas de encomendas, desenvolvida com Node.js, Expr
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/rockectlog.git
+git clone https://github.com/Fel1324/rockectlog.git
 cd rockectlog
 ```
 
