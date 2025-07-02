@@ -29,7 +29,7 @@ API para gerenciamento de entregas de encomendas, desenvolvida com Node.js, Expr
 
 ```bash
 git clone https://github.com/Fel1324/Rocketlog.git
-cd rockectlog
+cd Rocketlog
 ```
 
 ### 2. Instale as dependências
